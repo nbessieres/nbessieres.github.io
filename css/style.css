@@ -16,7 +16,7 @@ html::-webkit-scrollbar {
 }
 body{
   color: #eee;
-  background-image: url("../img/desktop.png");
+  background-image: url("https://images.unsplash.com/photo-1607114015068-c9df0f325d75?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -26,7 +26,7 @@ body{
 /*START HEADER*/
 
 .label {
-    padding-top: 18rem;
+  padding-top: 12rem;
   background-color: none;
 	left: 50%;
 	width: 100%;
@@ -80,91 +80,8 @@ body{
 	font-size: 1rem;
 	font-weight: 300;
 	letter-spacing: 1rem;
-	margin-top: -53px;
+	margin-top: -40px;
   user-select: none;
   padding-bottom: 1rem;
 }
 /*END HEADER*/
-
-/* START TEST CARD*/
-.test{
-  position: relative;
-  width: 320px;
-  height: 420px;
-  background: #122936;
-  border-radius: 20px;
-  overflow: hidden;
-}
-.test::before{
-  content: '';
-  position: absolute;
-  top: -50%;
-  width: 100%;
-  height: 100%;
-  background: #ffc485;
-  transform: skewY(345deg);
-  transition: 0.5s;
-}
-.test:hover::before{
-  top: -70%;
-  transform: skewY(390deg);
-}
-
-.test .imgBx{
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  z-index: 1;
-}
-.test .img img{
-  max-width: 100%;
-  transition: 0.5s;
-}
-.test:hover .imgBx img{
-  max-width: 50%;
-}
-
-.test .contentBx{
-  position: relative;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 1;
-}
-.test .contentBx h3{
-  font-size: 18px;
-  color: #fff;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.test .contentBx .price{
-  font-size: 24px;
-  color: #fff;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.test .contentBx .buy{
-  position: relative;
-  top: 200px;
-  opacity: 0;
-  padding: 10px 30px;
-  margin-top: 15px;
-  color: #fff;
-  text-decoration: none;
-  background: #ffc485;
-  border-radius: 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: 0.5s;
-}
-.test:hover .contentBx .buy{
-  top: 0;
-  opacity: 1;
-}
-/* END TEST CARD*/
