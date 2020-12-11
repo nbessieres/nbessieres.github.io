@@ -21,6 +21,7 @@ body{
   background-repeat: no-repeat;
   background-position: 50% 0%;
   background-attachment: fixed;
+  user-select: none;
   min-height: 100vh;
 }
 /*START HEADER*/
