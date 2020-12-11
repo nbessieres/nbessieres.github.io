@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 18px;
+  -ms-overflow-style: none; /* Hide scrollbar for IE & EDGE */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+body{
+  color: #eee;
+  background-image: url("../img/desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+
+}
+/*START HEADER*/
+
+.label {
+    padding-top: 18rem;
+  background-color: none;
+	left: 50%;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+  filter: blur(0px);
+  animation: appear 1s ease-in;
+}
+
+@keyframes appear {
+  0% {
+      filter: blur(500px);
+  }
+  10% {
+      filter: blur(400px);
+  }
+  20% {
+      filter: blur(300px);
+  }
+  30% {
+      filter: blur(200px);
+  }
+  40% {
+      filter: blur(100px);
+  }
+  50% {
+      filter: blur(80px);
+  }
+  60% {
+      filter: blur(60px);
+  }
+  90%{
+    filter: blur(20px);
+  }
+  100% {
+      filter: blur(0px);
+  }
+}
+
+.label h1{
+  text-shadow: 6px 2px #040404;
+	font-size: 6rem;
+	font-family: 'Norican', cursive;
+	-webkit-background-clip: text;
+	user-select: none;
+  padding-bottom: 1rem;
+}
+
+.label h6{
+  text-shadow: 3px 2px #040404;
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: 1rem;
+	margin-top: -53px;
+  user-select: none;
+  padding-bottom: 1rem;
+}
+/*END HEADER*/
+
+/* START TEST CARD*/
+.test{
+  position: relative;
+  width: 320px;
+  height: 420px;
+  background: #122936;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.test::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #ffc485;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+.test:hover::before{
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.test .imgBx{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+.test .img img{
+  max-width: 100%;
+  transition: 0.5s;
+}
+.test:hover .imgBx img{
+  max-width: 50%;
+}
+
+.test .contentBx{
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+.test .contentBx h3{
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.test .contentBx .price{
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.test .contentBx .buy{
+  position: relative;
+  top: 200px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration: none;
+  background: #ffc485;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.test:hover .contentBx .buy{
+  top: 0;
+  opacity: 1;
+}
+/* END TEST CARD*/
