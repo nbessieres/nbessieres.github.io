@@ -1,5 +1,5 @@
 window.onload = function(){
-console.log('hello');
+console.log('SnowFlakes Incoming');
 
   //get the cancvas and context and store in vars
   var canvas = document.getElementById("sky");
