@@ -2,9 +2,8 @@ window.onload = function(){
 console.log('SnowFlakes Incoming');
 
   //get the cancvas and context and store in vars
-  var canvas = document.getElementById("sky");
-  var ctx = canvas.getContext("2d");
-
+  const canvas = document.getElementById("sky");
+  const ctx = canvas.getContext("2d");
   //set canvas dims to window height and width
   var W = window.innerWidth;
   var H = window.innerHeight;
@@ -63,4 +62,5 @@ console.log('SnowFlakes Incoming');
   }
 
   setInterval(drawFlakes, 25);
+
 }

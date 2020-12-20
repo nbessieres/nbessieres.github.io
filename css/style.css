@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 *{
   margin: 0;
@@ -16,6 +18,7 @@ html::-webkit-scrollbar {
 
 body{
   color: #eee;
+  font-family: 'Vollkorn', serif;
   background-image: url("https://images.unsplash.com/photo-1607114015068-c9df0f325d75?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,10 +31,13 @@ canvas{
   position: fixed;
   z-index: -10;
 }
+section:nth-child(1n-0){
+  min-height: 110vh;
+}
 /*START HEADER*/
 
 .label {
-  padding-top: 8rem;
+  padding-top: 16rem;
   background-color: none;
 	left: 50%;
 	width: 100%;
@@ -81,6 +87,7 @@ canvas{
 }
 
 .label h6{
+  	font-family: 'Lobster', serif;
 	font-size: 1rem;
 	font-weight: 300;
 	letter-spacing: 1rem;
@@ -89,6 +96,16 @@ canvas{
   padding-bottom: 1rem;
 }
 /*END HEADER*/
+
+/*START PRESENTATION*/
+.presentation{
+  text-shadow: 4px 2px #ffc4;
+	font-size: 3rem;
+	font-family: 'Norican', cursive;
+	-webkit-background-clip: text;
+	user-select: none;
+}
+/*END PRESENTATION*/
 
 /*START PROFILE*/
 
@@ -109,7 +126,7 @@ canvas{
 
 .progressCsharp{
   background-color: #FCBC51;
-  width: 50%;
+  width: 70%;
   background: linear-gradient(45deg, rgba(255,196,133,1) 25%, rgba(235,141,167,1) 50%, rgba(218,93,197,1) 75%, rgba(184,0,255,1) 100%);;
   animation: progressAnimationStrikeCsharp 3s;
 }
@@ -155,7 +172,7 @@ canvas{
 }
 @keyframes progressAnimationStrikeCsharp {
      from { width: 0 }
-     to   { width: 50% }
+     to   { width: 70% }
 }
 
 /*END PROFILE*/
