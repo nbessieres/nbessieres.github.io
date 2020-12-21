@@ -31,13 +31,12 @@ canvas{
   position: fixed;
   z-index: -10;
 }
-section:nth-child(1n-0){
-  min-height: 110vh;
-}
+
 /*START HEADER*/
 
 .label {
   padding-top: 16rem;
+  padding-bottom: 1rem;
   background-color: none;
 	left: 50%;
 	width: 100%;
