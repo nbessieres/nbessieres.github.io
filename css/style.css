@@ -25,153 +25,216 @@ body{
   background-position: 50% 0%;
   background-attachment: fixed;
   user-select: none;
-  min-height: 100vh;
+}
+header{
+  height: 100vh;
 }
 canvas{
   position: fixed;
   z-index: -10;
 }
+section{
+  padding: 6rem 0;
+}
 
 /*START HEADER*/
 
 .label {
-  padding-top: 16rem;
-  padding-bottom: 1rem;
-  background-color: none;
-	left: 50%;
-	width: 100%;
-	text-align: center;
-	z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 100;
   filter: blur(0px);
   animation: appear 1s ease-in;
 }
 
 @keyframes appear {
   0% {
-      filter: blur(500px);
+    filter: blur(500px);
   }
   10% {
-      filter: blur(400px);
+    filter: blur(400px);
   }
   20% {
-      filter: blur(300px);
+    filter: blur(300px);
   }
   30% {
-      filter: blur(200px);
+    filter: blur(200px);
   }
   40% {
-      filter: blur(100px);
+    filter: blur(100px);
   }
   50% {
-      filter: blur(80px);
+    filter: blur(80px);
   }
   60% {
-      filter: blur(60px);
+    filter: blur(60px);
   }
   90%{
     filter: blur(20px);
   }
   100% {
-      filter: blur(0px);
+    filter: blur(0px);
   }
 }
 
 .label h1{
   text-shadow: 6px 2px #ffc4;
-	font-size: 6rem;
-	font-family: 'Norican', cursive;
-	-webkit-background-clip: text;
-	user-select: none;
+  font-size: 7.7rem;
+  font-family: 'Norican', cursive;
+  -webkit-background-clip: text;
+  user-select: none;
   padding-bottom: 1rem;
 }
 
 .label h6{
-  	font-family: 'Lobster', serif;
-	font-size: 1rem;
-	font-weight: 300;
-	letter-spacing: 1rem;
-	margin-top: -40px;
+  font-family: 'Lobster', serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1rem;
+  margin-top: -40px;
   user-select: none;
   padding-bottom: 1rem;
 }
 /*END HEADER*/
 
 /*START PRESENTATION*/
-.presentation{
-  text-shadow: 4px 2px #ffc4;
-	font-size: 3rem;
-	font-family: 'Norican', cursive;
-	-webkit-background-clip: text;
-	user-select: none;
+
+.presentation {
+  background-color: none;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  filter: blur(0px);
+  animation: appear 1s ease-in;
+}
+
+.presentation h1{
+  text-shadow: 6px 2px #ffc4;
+  font-size: 6rem;
+  font-family: 'Norican', cursive;
+  -webkit-background-clip: text;
+  user-select: none;
+  padding-bottom: 1rem;
+}
+
+.presentation p{
+  font-size: 2rem;
+  font-family: 'Vollkorn', serif;
+  user-select: none;
+  padding-bottom: 1rem;
 }
 /*END PRESENTATION*/
 
 /*START PROFILE*/
-
+#Skills{
+  text-shadow: 6px 2px #ffc4;
+  font-size: 6rem;
+  font-family: 'Norican', cursive;
+  -webkit-background-clip: text;
+  user-select: none;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.fas{
+  font-size: 4rem;
+}
 .progress {
   border-radius: 30px;
   background: rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  padding-bottom: 1.4rem;
+  margin-bottom: 1rem;
+  background-color: #FCBC51;
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,193,128,1) 50%, rgba(64,0,255,1) 100%);
+}
+.progress-badge{
+  font-size: 1.5rem;
 }
 
 .progress-bar {
   height: 18px;
-    border-radius: 30px;
-    background-image:
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-    transition: 0.4s linear;
-    transition-property: width, background-color;
+  border-radius: 30px;
+  background-image:
+  linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
 }
 
+
 .progressCsharp{
-  background-color: #FCBC51;
-  width: 70%;
-  background: linear-gradient(45deg, rgba(255,196,133,1) 25%, rgba(235,141,167,1) 50%, rgba(218,93,197,1) 75%, rgba(184,0,255,1) 100%);;
+  width: 85%;
   animation: progressAnimationStrikeCsharp 3s;
 }
 .progressPHP{
-  background-color: #FCBC51;
-  width: 90%;
-  background: linear-gradient(90deg, rgba(215,90,90,1) 0%, rgba(238,174,202,1) 50%, rgba(148,187,233,1) 100%);
+  width: 95%;
   animation: progressAnimationStrikePHP 3s;
 }
 .progressHTML{
-  background-color: #FCBC51;
   width: 100%;
-  background: linear-gradient(45deg, rgba(131,58,180,1) 3%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   animation: progressAnimationStrikeHTML 3s;
 }
 .progressJS{
-  background-color: #FCBC51;
-  width: 75%;
-  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,164,60,1) 50%, rgba(253,255,208,1) 100%);
+  width: 80%;
   animation: progressAnimationStrikeJS 3s;
 }
 .progressCSS{
-  background-color: #FCBC51;
   width: 100%;
-  background: linear-gradient(90deg, rgba(99,228,109,1) 0%, rgba(87,255,209,1) 50%, rgba(208,255,245,1) 100%);
   animation: progressAnimationStrikeCSS 3s;
 }
+.progressSQL{
+  width: 90%;
+  animation: progressAnimationStrikeSQL 3s;
+}
+.progressSymfony{
+  width: 90%;
+  animation: progressAnimationStrikeSymfony 3s;
+}
+.progressIonic{
+  width: 80%;
+  animation: progressAnimationStrikeIonic 3s;
+}
+
 @keyframes progressAnimationStrikeHTML {
-     from { width: 0 }
-     to   { width: 100% }
+  from { width: 0 }
+  to   { width: 100% }
 }
 @keyframes progressAnimationStrikeCSS {
-     from { width: 0 }
-     to   { width: 100% }
+  from { width: 0 }
+  to   { width: 100% }
 }
 @keyframes progressAnimationStrikePHP {
-     from { width: 0 }
-     to   { width: 90% }
+  from { width: 0 }
+  to   { width: 95% }
 }
 @keyframes progressAnimationStrikeJS {
-     from { width: 0 }
-     to   { width: 75% }
+  from { width: 0 }
+  to   { width: 80% }
 }
 @keyframes progressAnimationStrikeCsharp {
-     from { width: 0 }
-     to   { width: 70% }
+  from { width: 0 }
+  to   { width: 85% }
+}
+@keyframes progressAnimationStrikeSQL {
+  from { width: 0 }
+  to   { width: 90% }
+}
+@keyframes progressAnimationStrikeSymfony {
+  from { width: 0 }
+  to   { width: 90% }
+}
+@keyframes progressAnimationStrikeIonic {
+  from { width: 0 }
+  to   { width: 80% }
 }
 
 /*END PROFILE*/
+
+/*START FOOTER*/
+.btn{
+  font-size: 2.4rem;
+}
+/*END FOOTER */
