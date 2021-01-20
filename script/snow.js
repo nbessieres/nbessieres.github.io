@@ -2,7 +2,7 @@ window.onload = function(){
 console.log('SnowFlakes Incoming');
 
   //get the cancvas and context and store in vars
-  const canvas = document.getElementById("sky");
+  const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
   //set canvas dims to window height and width
   var W = window.innerWidth;
