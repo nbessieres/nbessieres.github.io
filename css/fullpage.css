@@ -245,6 +245,7 @@ background-image: url("https://images.unsplash.com/photo-1607114015068-c9df0f325
     background-repeat: no-repeat;
 }
 .label {
+  color: #eee;
   position: absolute;
   top: 50%;
   left: 50%;
