@@ -236,5 +236,7 @@ html.fp-enabled,
     border: 0;
 }
 #section1{
-    background: url('https://images.unsplash.com/photo-1539844647304-7702310556ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80');
+    background: url('https://images.unsplash.com/photo-1539844647304-7702310556ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
