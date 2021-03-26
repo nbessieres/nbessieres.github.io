@@ -240,3 +240,30 @@ html.fp-enabled,
     background-size: cover;
     background-repeat: no-repeat;
 }
+.label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 100;
+}
+
+.label h1{
+  text-shadow: 6px 2px #ffc4;
+  font-size: 7.7rem;
+  font-family: 'Norican', cursive;
+  -webkit-background-clip: text;
+  user-select: none;
+  padding-bottom: 1rem;
+}
+
+.label h6{
+  font-family: 'Lobster', serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1rem;
+  margin-top: -40px;
+  user-select: none;
+  padding-bottom: 1rem;
+}
